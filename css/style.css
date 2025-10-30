@@ -6,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Gaya dasar untuk body */
 body {
     background-color: #f0f2f5;
     color: #333;
@@ -26,6 +27,7 @@ body {
     padding: 30px;
 }
 
+/* Judul Aplikasi */
 h1 {
     text-align: center;
     color: #2c3e50;
@@ -39,6 +41,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Input Tugas */
 .todo-form input[type="text"] {
     flex-grow: 1; /* Ambil sisa ruang */
     padding: 10px 15px;
@@ -47,6 +50,7 @@ h1 {
     font-size: 16px;
 }
 
+/* Input Tanggal */
 .todo-form input[type="date"] {
     padding: 8px;
     border: 1px solid #ddd;
@@ -54,6 +58,7 @@ h1 {
     font-size: 16px;
 }
 
+/* Tombol Submit */
 .todo-form button {
     padding: 0 15px;
     font-size: 24px;
@@ -65,6 +70,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
+/* Gaya tombol saat dihover */
 .todo-form button:hover {
     background-color: #2980b9;
 }
@@ -76,6 +82,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Tombol Filter dan Delete All */
 .controls button {
     padding: 8px 12px;
     border: none;
@@ -84,16 +91,19 @@ h1 {
     transition: background-color 0.3s;
 }
 
+/* Gaya tombol saat dihover */
 #filter-btn {
     background-color: #f39c12;
     color: white;
 }
+/* Gaya tombol saat dihover */
 #filter-btn:hover { background-color: #e67e22; }
-
+/* Gaya tombol saat dihover */
 #delete-all-btn {
     background-color: #e74c3c;
     color: white;
 }
+/* Gaya tombol saat dihover */
 #delete-all-btn:hover { background-color: #c0392b; }
 
 /* Header Daftar Tugas */
@@ -116,6 +126,7 @@ h1 {
     list-style-type: none;
 }
 
+/* Pesan Tidak Ada Tugas */
 .no-task {
     text-align: center;
     color: #95a5a6;
@@ -130,15 +141,18 @@ h1 {
     border-bottom: 1px solid #ecf0f1;
 }
 
+/* Gaya tugas yang sudah selesai */
 .todo-item.completed span.task-text {
     text-decoration: line-through;
     color: #95a5a6;
 }
 
+/* Gaya tugas yang disembunyikan */
 .todo-item.hidden {
     display: none;
 }
 
+/* Gaya teks */
 .todo-item span {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -146,17 +160,21 @@ h1 {
     padding-right: 10px;
 }
 
+/* Gaya status */
 .todo-item .status {
     font-weight: bold;
 }
 
+/* Gaya warna status */
 .todo-item .status.pending { color: #f39c12; }
 .todo-item .status.done { color: #2ecc71; }
 
+/* Gaya tombol aksi */
 .todo-item .actions {
     text-align: right;
 }
 
+/* Gaya tombol aksi */
 .todo-item .actions button {
     border: none;
     background: none;
@@ -165,5 +183,6 @@ h1 {
     margin-left: 10px;
 }
 
+/* Gaya warna tombol aksi */
 .btn-complete { color: #2ecc71; }
 .btn-delete { color: #e74c3c; }
