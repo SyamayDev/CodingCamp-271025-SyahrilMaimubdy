@@ -1,0 +1,169 @@
+/* Reset dasar dan font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kontainer utama aplikasi */
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Input */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-form input[type="text"] {
+    flex-grow: 1; /* Ambil sisa ruang */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.todo-form input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.todo-form button {
+    padding: 0 15px;
+    font-size: 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Tombol Kontrol */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#filter-btn {
+    background-color: #f39c12;
+    color: white;
+}
+#filter-btn:hover { background-color: #e67e22; }
+
+#delete-all-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+#delete-all-btn:hover { background-color: #c0392b; }
+
+/* Header Daftar Tugas */
+.list-header {
+    display: flex;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #ecf0f1;
+    margin-bottom: 10px;
+}
+
+/* Kolom */
+.col-task { flex-basis: 40%; }
+.col-date { flex-basis: 25%; }
+.col-status { flex-basis: 15%; }
+.col-actions { flex-basis: 20%; text-align: right; }
+
+/* Daftar Tugas */
+.todo-list {
+    list-style-type: none;
+}
+
+.no-task {
+    text-align: center;
+    color: #95a5a6;
+    padding: 20px;
+}
+
+/* Item Tugas Individual */
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.todo-item.completed span.task-text {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+.todo-item.hidden {
+    display: none;
+}
+
+.todo-item span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.todo-item .status {
+    font-weight: bold;
+}
+
+.todo-item .status.pending { color: #f39c12; }
+.todo-item .status.done { color: #2ecc71; }
+
+.todo-item .actions {
+    text-align: right;
+}
+
+.todo-item .actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.btn-complete { color: #2ecc71; }
+.btn-delete { color: #e74c3c; }
